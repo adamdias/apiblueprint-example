@@ -1,5 +1,39 @@
-+ first_name: John (string, required)
-+ last_name: Doe (string, required)
-+ nickname: johndoe (string, required)
-+ email: mail@test.com (string, required)
-+ password: 123456 (string, required)
++ Attributes
+    + first_name: John
+    + last_name: Doe
+    + nickname: johndoe
+    + email: mail@test.com
+    + password: 123456
+
++ Schema
+
+        {
+          "type": "object",
+          "properties": {
+            "first_name": {
+              "type": "string",
+              "description": "Primeiro nome",
+              "required": true
+            },
+            "last_name": {
+              "type": "string",
+              "description": "Último nome",
+              "required": true
+            },
+            "nickname": {
+              "type": "string",
+              "description": "Nome de usuário",
+              "required": true
+            },
+            "email": {
+              "type": "string",
+              "description": "Email de acesso",
+              "required": true
+            },
+            "password": {
+              "type": "string",
+              "description": "Senha de acesso",
+              "required": true
+            }
+          }
+        }

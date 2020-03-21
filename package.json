@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "scripts": {
-    "aglio": "aglio -i docs/api/index.apib --theme-variables slate --theme-template triple -o docs/api/index.html"
+  "scripts": {     
+    "snowboard": "snowboard html -o docs/api/index.html docs/api/index.apib",
+    "fake": "snowboard mock docs/api/index.apib"
+  },
+  "dependencies": {
+    "snowboard": "3.7.5"
   }
 }
